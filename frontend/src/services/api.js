@@ -6,7 +6,7 @@ import axios from "axios";
 // =====================================
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://digital-queue-management-y1ln.onrender.com/api",
 
   headers: {
     "Content-Type": "application/json",
