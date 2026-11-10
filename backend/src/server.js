@@ -33,8 +33,12 @@ const io = new Server(server, {
 // ================================
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:5176",
-    credentials: true
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:5176",
+    "https://digital-queue-frontend.vercel.app"
+  ],
+  credentials: true
 }));
 
 app.use(express.json());
